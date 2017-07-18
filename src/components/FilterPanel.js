@@ -1,8 +1,13 @@
 import React from 'react';
+import FilterHeader from './FilterHeader';
+import FilterActions from './FilterActions';
+import FilterList from './FilterList';
 
 const FilterPanel = props => (
     <div className="FilterPanel">
-        Nothing here for now.
+        <FilterHeader />
+        <FilterList filters={[]} />
+        <FilterActions />
     </div>
 );
 

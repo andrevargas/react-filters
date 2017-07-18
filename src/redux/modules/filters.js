@@ -22,24 +22,18 @@ export function updateFilter(payload) {
 }
 
 // Reducer
-export default function reducer(state = {}, action) {
+export default function reducer(state = [], action) {
     switch (action.type) {
         case ADD_FILTER:
-            return {
-                ...state,
-                [action.payload.id]: action.payload
-            };
+            return [...state, action.payload];
         case REMOVE_FILTER:
-            const { [action.payload]: deletedItem, ...rest } = state;
-            return rest;
+            return state.filter(item => item.id !== action.payload.id);
         case UPDATE_FILTER:
-            return {
-                ...state,
-                [action.payload.id]: {
-                    ...state[action.payload.id],
-                    ...action.payload
-                }
-            };
+            return state.map(item =>
+                item.id === action.payload.id
+                ? { ...item, ...action.payload }
+                : item
+            );
         default:
             return state;
     }
