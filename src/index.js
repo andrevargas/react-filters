@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import FilterPanel from './components/FilterPanel';
+import './index.css';
 
 ReactDOM.render(
-    <h1>Hello world!</h1>,
+    <FilterPanel />,
     document.getElementById('root')
 );
