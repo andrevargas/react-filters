@@ -5,7 +5,7 @@ import FilterList from './FilterList';
 
 const FilterPanel = props => (
     <div className="FilterPanel">
-        <FilterHeader />
+        <FilterHeader title="Filters" helpText="Do you need help?" />
         <FilterList filters={[]} />
         <FilterActions />
     </div>

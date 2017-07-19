@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FilterPanel from './components/FilterPanel';
+import Root from './containers/Root';
+import configureStore from './store/configureStore';
 import './index.css';
 
+const store = configureStore();
+
 ReactDOM.render(
-    <FilterPanel />,
+    <Root store={store} />,
     document.getElementById('root')
 );
