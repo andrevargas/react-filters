@@ -1,0 +1,20 @@
+.RemoveButton {
+    width: 34px;
+    height: 34px;
+    border: none;
+    background-color: #EF5350;
+    color: #fff;
+}
+
+.RemoveButton:hover {
+    cursor: pointer;
+    background-color: #E53935;
+}
+
+.RemoveButton:active {
+    background-color: #D32F2F;
+}
+
+.RemoveButton:focus {
+    outline: none;
+}

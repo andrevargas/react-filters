@@ -1,12 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import DevTools from './DevTools';
-import FilterPanel from '../components/FilterPanel';
+import Filters from './Filters';
 
 const Root = ({ store }) => (
     <Provider store={store}>
-        <div>
-            <FilterPanel />
+        <div style={{ width: '60%', margin: '5%' }}>
+            <Filters />
             <DevTools />
         </div>
     </Provider>

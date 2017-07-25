@@ -11,7 +11,7 @@ export default function filters(state = initialState, action) {
         case ADD_FILTER:
             return [...state, action.payload];
         case REMOVE_FILTER:
-            return state.filter(item => item.id !== action.payload.id);
+            return state.filter(item => item.id !== action.payload);
         case UPDATE_FILTER:
             return state.map(item =>
                 item.id === action.payload.id

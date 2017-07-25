@@ -1,0 +1,12 @@
+.FilterHeader {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.FilterHeader__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1565C0;
+    margin: 7px 0;
+    padding: 0;
+}

@@ -1,0 +1,27 @@
+.AddButton {
+    border: none;
+    padding: 2px 13px;
+    background-color: #2196F3;
+    color: #fff;
+    font-size: 1.1em;
+    margin: 10px 0;
+    line-height: 34px;
+    vertical-align: middle;
+}
+
+.AddButton:hover {
+    cursor: pointer;
+    background-color: #1E88E5;
+}
+
+.AddButton:active {
+    background-color: #1976D2;
+}
+
+.AddButton:focus {
+    outline: none;
+}
+
+.AddButton__icon {
+    margin-right: 7px;
+}

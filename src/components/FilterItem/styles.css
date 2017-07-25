@@ -1,0 +1,40 @@
+.FilterItem {
+    padding: 10px 0;
+}
+
+.FilterItem__row {
+    width: 100%;
+}
+
+.FilterItem__column {
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.FilterItem--field { width: 30%; }
+.FilterItem--operator { width: 22%; }
+.FilterItem--value { width: 35%; }
+
+.FilterItem__label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.FilterItem__input {
+    width: 100%;
+    height: 34px;
+    display: block;
+    padding: 6px 12px;
+    border: 1px solid #e5e5e5;
+    transition: border-color ease-in-out .15s;
+    font-family: inherit;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+.FilterItem__input:focus {
+    outline: none;
+    border-color: #999;
+}
